@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    .list-title{
+        color: rgb(229, 231, 235);
+        font-weight: 700;
+        padding: 0.5rem;
+    }
+    .add-title{
+        flex-grow: 1;
+        text-align: right;
+        padding: 0.5rem 1rem;
+    }
+        .add-button{
+            background-color: rgb(132, 204, 22);
+            color:rgb(255, 255, 255);
+            font-weight: 600;
+            padding: 0.3rem;
+            border-radius: 0.25rem;
+            display: inline-flex;
+            align-items: center;
+        }
+            .add-button:hover{
+                background-color: rgb(163, 230, 53);
+                color: rgb(250 250 250);
+            }
+            .plus{
+                margin: 0rem 0.1rem;
+            }
+/* ListaTareas */
+.list{
+    display: flex;
+    justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.delete-all{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 0rem 1.50rem;
+    height: auto;  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task{
+    width: 45%;
 }
-
-.App-link {
-  color: #61dafb;
+    .task-content{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(31, 41, 55);
+        color:rgb(255, 255, 255);
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 1rem;
+    }
+        .padd{
+            padding: 0rem 0.25rem;
+        }
+        .extra-small{
+            font-size: 0.45rem;
+            line-height: 1rem;
+            margin: 0px -15px;
+        }
+        .done{
+            background-color: rgb(150, 41, 150);
+            padding: 0.25rem 0.75rem;
+            margin-top: 0.5rem;
+        }
+            .done:hover{
+                background-color: rgb(185, 50, 185);
+            }
+        .marg{
+            margin: 0.5rem 0.25rem;
+        }
+        .edit-btn{
+            background-color: rgb(112, 109, 109);
+            padding: 0.25rem 0.5rem;
+        }
+            .edit-btn:hover{
+                background-color: rgb(134, 131, 131);
+            }
+        .delete-one-btn{
+            background-color: rgb(223, 64, 64);
+            padding: 0.25rem 0.5rem;
+        }
+            .delete-one-btn:hover{
+                background-color: rgb(221, 81, 81);
+            }
+/* FormTareas */
+.form-tareas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .form-style{
+        background-color: rgb(15, 23, 42);
+        padding: 2.5rem;
+    }
+        .margins{
+            margin-bottom: 1.5rem;
+        }
+        .inputs{
+            padding: 0.75rem 1rem;
+            background-color: rgb(63, 63, 70);
+            width: 100%;
+        }
+            .inputs:focus{
+                outline: none;
+                color: rgb(243, 244, 246);
+            }
+        .boton-crear{
+            background-color: rgb(22, 163, 74);;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            margin-top: 1.25rem;
+        }
+            .boton-crear:hover{
+                background-color: rgb(34, 197, 94);
+            }
